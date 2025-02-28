@@ -1,0 +1,18 @@
+<!-- <p>postcard works! {{ postObj | json }}</p> -->
+
+<div class="card h-100 bg-secondary text-white">
+  <div class="card-header">
+    <h3 class="m-0">{{ postObj.title }}</h3>
+  </div>
+  <div class="card-body">
+    <p class="m-0">{{ postObj.content }}</p>
+  </div>
+  <div class="card-footer">
+    <button
+      routerLink="{{ postObj.postId }}"
+      class="btn btn-sm btn-block btn-primary"
+    >
+      View More
+    </button>
+  </div>
+</div>
