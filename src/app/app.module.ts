@@ -12,8 +12,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { PostcardComponent } from './shared/component/postcard/postcard.component';
 import { AuthInterceptor } from './shared/service/auth-interceptor.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { GetconfirmComponent } from './shared/component/getconfirm/getconfirm.component';
 import { MarerialModule } from './marerial/marerial.module';
+import { GetconfirmComponent } from './shared/component/getconfirm/getconfirm.component';
 
 @NgModule({
   declarations: [

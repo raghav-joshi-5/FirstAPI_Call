@@ -19,7 +19,7 @@ export class PostformComponent implements OnInit {
     private _route: ActivatedRoute,
     private _postService: PostService,
     private _router: Router,
-    private __snackbar: SnackbarService
+    private _snackbar: SnackbarService
   ) {}
 
   ngOnInit(): void {
@@ -59,7 +59,7 @@ export class PostformComponent implements OnInit {
       this._postService.createpost(newPost).subscribe((_res) => {
         // console.log(res);
         // do this last
-        this.__snackbar.opensnackbar(
+        this._snackbar.opensnackbar(
           `the ${newPost.title} is Added successfully`
         );
         this._router.navigate(['posts']);
@@ -74,7 +74,7 @@ export class PostformComponent implements OnInit {
       this._postService.updatepost(updatedObj).subscribe((_res) => {
         // console.log(res);
         // do this last
-        this.__snackbar.opensnackbar(
+        this._snackbar.opensnackbar(
           `the ${updatedObj.title} is Updated successfully`
         );
         this._router.navigate(['posts']);

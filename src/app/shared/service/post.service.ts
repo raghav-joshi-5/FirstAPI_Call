@@ -41,8 +41,6 @@ export class PostService {
 
   onRemove(removeObj: Ipost) {
     let removeURL: string = `${this.BASEURL}/posts/${removeObj.postId}.json`;
-   
-
     return this._http.delete<null>(removeURL);
   }
 }

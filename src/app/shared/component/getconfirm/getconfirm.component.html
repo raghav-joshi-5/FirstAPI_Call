@@ -1,1 +1,9 @@
-<p>getconfirm works!</p>
+<p>Are you sure you want to remove this post</p>
+<div class="d-flex justify-content-between">
+  <button (click)="onConfirm(true)" class="btn btn-sm btn-danger">
+    Confirm
+  </button>
+  <button (click)="onConfirm(false)" class="btn btn-sm btn-primary">
+    Cancel
+  </button>
+</div>
